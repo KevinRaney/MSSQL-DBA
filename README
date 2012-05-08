@@ -1,2 +1,14 @@
-Here is a collection of SQL Server stored procedures that i use to manage systems. 
-I install these sprocs on every sql server that i manage.
+Title: SQL DBA Stored Procedures
+
+Description: Generic stored procedure or other objects (normally in the master DB
+             of each SQL Server Instance) that help in the administration of all 
+             DBs.
+
+Author: Kevin R. Raney
+
+Contributors: n/a
+
+##### Version 1.0.0 #############################################################
+Release Date: 9/1/2011
+
+Initial Creation

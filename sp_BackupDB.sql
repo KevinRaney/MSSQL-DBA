@@ -1,5 +1,8 @@
+/* Example Usage
 -- exec sp_BackupDB @DatabaseName = 'DBAInfrastructure', @BackupPath = 'D:\SQLDBFiles\Backups\'
-use master
+*/
+
+use master;
 go
 
 if object_id('sp_BackupDB','P') is not null

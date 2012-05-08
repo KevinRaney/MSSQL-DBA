@@ -49,6 +49,7 @@ create procedure sp_who3 (@DatabaseName varchar(50) = null,
   Kevin R. Raney    09/09/2011  Added the ability to profile sessions over a certain time
                                 period.
   Kevin R. Raney    09/12/2011  Added SQL Text to the results.
+  Kevin R. Raney    04/03/2012  Added the ability to view blocked sessions only.  
 
   Requested Enhancements:
   - None at this time
