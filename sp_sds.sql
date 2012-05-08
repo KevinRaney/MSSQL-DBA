@@ -13,6 +13,22 @@ create PROCEDURE [dbo].[sp_SDS]
   @OutputType varchar(20) = 'HumanReadable'
 AS
 
+/**************************************************************************************************
+**
+** author: Richard Ding
+** date: 4/8/2008
+** usage: list db size AND path w/o SUMmary
+** test code: sp_SDS -- default behavior
+** sp_SDS 'maAster'
+** sp_SDS NULL, NULL, 0
+** sp_SDS NULL, 'file', 1, 'GB'
+** sp_SDS 'Test_snapshot', 'Database', 1
+** sp_SDS 'Test', 'File', 0, 'kb'
+** sp_SDS 'pfaids', 'Database', 0, 'gb'
+** sp_SDS 'tempdb', NULL, 1, 'kb'
+** 
+**************************************************************************************************/
+
 SET NOCOUNT ON;
 
 IF @TargetDatabase IS NOT NULL AND DB_ID(@TargetDatabase) IS NULL
